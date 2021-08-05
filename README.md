@@ -41,3 +41,6 @@ docker run -it --net host --name pgsql13repl -e MEMBERNAME=member_2 -e INITDB=ye
 docker run -it --net host --name pgsql13repl -e MEMBERNAME=member_n -e INITDB=yes -e ETCDIPPORT1="192.168.0.158:2379" -v /opt/pgsql13:/var/lib/postgresql postgresql13
 </pre>
 
+
+## Combine with openvpn 
+You can also combine this to use openvpn so postgresql can have replication between on-premise and on-cloud  
